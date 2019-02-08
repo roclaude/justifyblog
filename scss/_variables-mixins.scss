@@ -1,0 +1,73 @@
+$CDNBaseURL: 'https://d1lnc6p59d57mi.cloudfront.net';
+
+// Main font style
+$qMainFontColor: #fff;
+$qMainFontFamily: sans-serif;
+$qMainFontWeight: 400;
+$qMainFontSize: 16px;
+$qMainLetterSpacing: 1px;
+
+// Background
+$qMainBackground: #1a1b1c;
+
+// h
+$qHFontColor: #404040;
+$qHFontFamily: sans-serif;
+
+// h1
+$qH1FontSize: 30px;
+$qH1FontWeight: 400;
+$qH1LetterSpacing: normal;
+
+// h2
+$qH2FontSize: 26px;
+$qH2FontWeight: 400;
+$qH2LetterSpacing: normal;
+
+// h3
+$qH3FontSize: 22px;
+$qH3FontWeight: 400;
+$qH3LetterSpacing: normal;
+
+// h4
+$qH4FontSize: 18px;
+$qH4FontWeight: 400;
+$qH4LetterSpacing: normal;
+
+// h5
+$qH5FontSize: 16px;
+$qH5FontWeight: 400;
+$qH5LetterSpacing: normal;
+
+// h6
+$qH6FontSize: 16px;
+$qH6FontWeight: 400;
+$qH6LetterSpacing: normal;
+
+// links
+$linkColor: #e95426;
+$linkColorHover: #e95426;
+
+
+////////////////////
+// Mixin
+////////////////////
+
+@mixin fontStyle($fontFamily, $fontSize, $fontWeight, $letterSpacing, $fontColor) {
+	font-family: 	$fontFamily;
+	font-size: 		$fontSize;
+	font-size: 		($fontSize / 16px) + rem ;
+	line-height: 	$fontSize + 4px;
+	font-weight: 	$fontWeight;
+	letter-spacing: $letterSpacing;
+	color: 			$fontColor;
+}
+
+@mixin transitionAll($time) {
+	-webkit-transition: all $time ease;
+	-moz-transition: all $time ease;
+	-ms-transition: all $time ease;
+	-o-transition: all $time ease;
+	transition: all $time ease;
+}
+
